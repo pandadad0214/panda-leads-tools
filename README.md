@@ -24,6 +24,13 @@ Same entry point from this repo:
 uvx --from git+https://github.com/pandadad0214/panda-leads-tools panda-leads-tools
 ```
 
+Docker (stdio):
+
+```bash
+docker build -t panda-leads-tools .
+docker run -i --rm -e APIFY_TOKEN panda-leads-tools
+```
+
 Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-tools", "panda-leads-tools"]`, env `APIFY_TOKEN`.
 
 Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-leads-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
