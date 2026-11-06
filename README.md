@@ -13,17 +13,16 @@ Focused MCP server (8 tools) from the [Panda Federation](https://github.com/pand
 Needs a free [Apify API token](https://console.apify.com/settings/integrations) and [uv](https://docs.astral.sh/uv/).
 
 ```bash
+uvx --from panda-federation-tools panda-leads-tools
+```
+
+Same entry point from this repo:
+
+```bash
 uvx --from git+https://github.com/pandadad0214/panda-leads-tools panda-leads-tools
 ```
 
-Or, once `panda-federation-tools` ≥ 1.4.0 is on PyPI:
-
-```bash
-uvx --from panda-federation-tools panda-leads-tools
-# same entry point, no thin-repo clone required
-```
-
-Cursor / Claude / VS Code: command `uvx`, args `["--from", "git+https://github.com/pandadad0214/panda-leads-tools", "panda-leads-tools"]` (or `["--from", "panda-federation-tools", "panda-leads-tools"]`), env `APIFY_TOKEN`.
+Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-tools", "panda-leads-tools"]`, env `APIFY_TOKEN`.
 
 ## Tools (8)
 
