@@ -1,5 +1,7 @@
 # Panda Leads Tools
 
+<!-- mcp-name: io.github.pandadad0214/panda-leads-tools -->
+
 **Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers.**
 
 Focused MCP server (8 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 23-tool mega-server for better Tool Definition Quality Score (TDQS) / Glama coherence.
@@ -23,6 +25,8 @@ uvx --from git+https://github.com/pandadad0214/panda-leads-tools panda-leads-too
 ```
 
 Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-tools", "panda-leads-tools"]`, env `APIFY_TOKEN`.
+
+Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-leads-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
 
 ## Tools (8)
 
