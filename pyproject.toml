@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "panda-leads-tools"
+version = "0.1.0"
+description = "Panda Leads Tools: Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Panda Federation (pandadad0214)" }]
+keywords = ["mcp", "mcp-server", "apify", "panda-federation", "leads"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+dependencies = [
+  "panda-federation-tools @ git+https://github.com/pandadad0214/panda-federation-tools.git@v1.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/pandadad0214/panda-leads-tools"
+Source = "https://github.com/pandadad0214/panda-leads-tools"
+"Umbrella index" = "https://github.com/pandadad0214/panda-federation-tools"
+"Apify Store" = "https://apify.com/pandadad0214"
+
+[project.scripts]
+panda-leads-tools = "panda_leads_tools.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/panda_leads_tools"]
