@@ -2,9 +2,9 @@
 
 <!-- mcp-name: io.github.pandadad0214/panda-leads-tools -->
 
-**Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers.**
+**Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers, IRS nonprofits.**
 
-Focused MCP server (8 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 23-tool mega-server for better Tool Definition Quality Score (TDQS) / Glama coherence.
+Focused MCP server (9 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 27-tool mega-server index for better Tool Definition Quality Score (TDQS) / Glama coherence.
 
 [![Umbrella](https://img.shields.io/badge/index-panda--federation--tools-blue)](https://github.com/pandadad0214/panda-federation-tools)
 [![Apify Store](https://img.shields.io/badge/Apify_Store-pandadad0214-00a3ff)](https://apify.com/pandadad0214)
@@ -35,7 +35,7 @@ Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-too
 
 Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-leads-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
 
-## Tools (8)
+## Tools (9)
 
 - `npi_provider_lists`
 - `podcast_leads_finder`
@@ -45,6 +45,7 @@ Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda
 - `company_team_finder`
 - `topic_trends_tracker`
 - `trucking_company_leads`
+- `nonprofit_leads_irs`
 
 Each tool runs one Apify Actor on your account. Empty runs are not charged per result; every call is capped by `run_max_charge_usd`. Full schemas and prices: [umbrella README](https://github.com/pandadad0214/panda-federation-tools#domain-tool-lists).
 

@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "panda-leads-tools"
 version = "0.1.0"
-description = "Panda Leads Tools: Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers."
+description = "Panda Leads Tools: public leads and enrichment (NPI, podcasts, local businesses, hiring, websites, teams, trends, trucking, IRS nonprofits)."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
