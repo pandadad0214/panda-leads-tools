@@ -1,0 +1,22 @@
+{
+  "name": "panda-leads-tools",
+  "version": "0.1.0",
+  "description": "Public leads MCP tools from official data: NPI, local, hiring, trucking, IRS, permits, H-1B, EU tenders (15 tools).",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Apify API Token",
+      "description": "Free Apify API token from https://console.apify.com/settings/integrations. Runs bill to your Apify account.",
+      "envVar": "APIFY_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "panda-leads-tools": {
+      "command": "uvx",
+      "args": [
+        "panda-leads-tools"
+      ]
+    }
+  }
+}
