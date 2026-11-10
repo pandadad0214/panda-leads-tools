@@ -2,7 +2,7 @@
 
 <!-- mcp-name: io.github.pandadad0214/panda-leads-tools -->
 
-Give Claude, Cursor or any MCP client 15 public lead-generation tools: local businesses, healthcare providers, podcasts, hiring signals, company enrichment and team pages, new Florida, Texas and New York businesses, permits, carriers, nonprofits, H-1B sponsors and EU tenders. Each tool runs one public-data Apify Actor on your own Apify account and is priced per result. Part of the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) toolkit (36 tools in four focused servers).
+Give Claude, Cursor or any MCP client 15 public lead-generation tools: local businesses, healthcare providers, podcasts, hiring signals, company enrichment and team pages, new Florida, Texas, New York and Colorado businesses, French companies, permits, carriers, nonprofits and H-1B sponsors. Each tool runs one public-data Apify Actor on your own Apify account and is priced per result. Part of the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) toolkit (40 tools in four focused servers).
 
 [![PyPI](https://img.shields.io/pypi/v/panda-leads-tools)](https://pypi.org/project/panda-leads-tools/)
 [![Latest Release](https://img.shields.io/github/v/release/pandadad0214/panda-leads-tools?label=latest%20release)](https://github.com/pandadad0214/panda-leads-tools/releases/latest)
@@ -36,7 +36,7 @@ uvx panda-leads-tools
 
 | Field | Value |
 | --- | --- |
-| Purpose | Focused MCP server with 15 public lead-generation tools: local businesses, healthcare providers, podcasts, hiring signals, company enrichment and team pages, new Florida, Texas and New York businesses, permits, carriers, nonprofits, H-1B sponsors and EU tenders. |
+| Purpose | Focused MCP server with 15 public lead-generation tools: local businesses, healthcare providers, podcasts, hiring signals, company enrichment and team pages, new Florida, Texas, New York and Colorado businesses, French companies, permits, carriers, nonprofits and H-1B sponsors. |
 | Use when | A task needs a prospect or account list built from official or open public data (registries, open maps, public job boards, company websites). |
 | Do not use when | You need LinkedIn, logged-in or paywalled data, scholarly sources (use `panda-research-tools`), federal funding (`panda-public-funding-tools`) or security audits (`panda-web-security-tools`). |
 | Install | `uvx panda-leads-tools` (stdio, Python 3.11+) |
@@ -88,7 +88,6 @@ The extension prompts for `APIFY_TOKEN` on install and launches the server with 
 - `company_hiring_signals`
 - `company_website_enricher`
 - `company_team_finder`
-- `topic_trends_tracker`
 - `trucking_company_leads`
 - `nonprofit_leads_irs`
 - `building_permit_leads`
@@ -96,15 +95,16 @@ The extension prompts for `APIFY_TOKEN` on install and launches the server with 
 - `texas_new_business_leads`
 - `new_york_new_business_leads`
 - `h1b_lca_sponsor_leads`
-- `eu_ted_tenders`
+- `colorado_new_business_leads`
+- `france_company_leads`
 
 Each tool runs one Apify Actor on your account. Empty runs are not charged per result; every call is capped by `run_max_charge_usd`. Full schemas and prices: [umbrella README](https://github.com/pandadad0214/panda-federation-tools#domain-tool-lists).
 
 ## Sibling domain servers
 
-- [`panda-research-tools`](https://github.com/pandadad0214/panda-research-tools) — Scholarly integrity and papers: citation checks, literature and PubMed search, academic experts, PDF tables, Wayback Machine snapshots.
-- [`panda-public-funding-tools`](https://github.com/pandadad0214/panda-public-funding-tools) — US federal money, filings and safety monitors: grants, contracts, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls, VIN decode.
-- [`panda-web-security-tools`](https://github.com/pandadad0214/panda-web-security-tools) — Site, email and agent safety: SPF/DKIM/DMARC audits, AI/SEO readiness, website change monitoring, hidden AI instructions scanner, bulk domain WHOIS/expiry, broken link checker.
+- [`panda-research-tools`](https://github.com/pandadad0214/panda-research-tools) — Scholarly integrity and papers: citation checks, literature and PubMed search, academic experts, PDF tables, Wayback Machine snapshots, topic trends.
+- [`panda-public-funding-tools`](https://github.com/pandadad0214/panda-public-funding-tools) — Public money, filings and safety monitors: grants, contracts, SAM.gov bids, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls, VIN decode, EU tenders.
+- [`panda-web-security-tools`](https://github.com/pandadad0214/panda-web-security-tools) — Site, email and agent safety: SPF/DKIM/DMARC audits, AI/SEO readiness, website change monitoring, hidden AI instructions scanner, bulk domain WHOIS/expiry, broken link checker, RSS and Atom feed monitor.
 
 Index / compatibility mega-server: [panda-federation-tools](https://github.com/pandadad0214/panda-federation-tools) (use only when you truly need every tool).
 

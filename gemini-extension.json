@@ -1,7 +1,7 @@
 {
   "name": "panda-leads-tools",
-  "version": "0.1.0",
-  "description": "Public leads MCP tools from official data: NPI, local, hiring, trucking, IRS, permits, H-1B, EU tenders (15 tools).",
+  "version": "0.2.0",
+  "description": "Public leads MCP tools from official data: NPI, local, hiring, trucking, IRS, permits, new firms, France (15 tools).",
   "contextFileName": "GEMINI.md",
   "settings": [
     {

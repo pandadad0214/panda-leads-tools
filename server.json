@@ -2,20 +2,20 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pandadad0214/panda-leads-tools",
   "title": "Panda Leads Tools",
-  "description": "Public leads from official data: NPI, local, hiring, trucking, IRS, permits, H-1B, tenders (15).",
+  "description": "Public leads from official data: NPI, local, hiring, trucking, IRS, permits, new firms, France (15).",
   "websiteUrl": "https://github.com/pandadad0214/panda-leads-tools",
   "repository": {
     "url": "https://github.com/pandadad0214/panda-leads-tools",
     "source": "github",
     "id": "1447663719"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "panda-leads-tools",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

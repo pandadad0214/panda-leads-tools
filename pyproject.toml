@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "panda-leads-tools"
-version = "0.1.0"
-description = "Panda Leads Tools: public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers, IRS nonprofits, building permits, new Florida, Texas and New York businesses, H-1B sponsors, EU tenders."
+version = "0.2.0"
+description = "Panda Leads Tools: public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, trucking carriers, IRS nonprofits, building permits, new Florida, Texas, New York and Colorado businesses, H-1B sponsors, French companies."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -23,7 +23,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "panda-federation-tools>=1.7.0,<2",
+  "panda-federation-tools>=1.8.0,<2",
 ]
 
 [project.urls]
